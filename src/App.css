@@ -1,38 +1,50 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i");
+
+html,
+body {
+  margin: auto;
+  max-width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.sidebar {
+  background-color: pink;
+  float: left;
+  width: 25%;
+  height: 768px;
   text-align: center;
+  position: fixed;
+  left: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar,
+.social-icons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+  padding: 5px;
+  margin: 0.5cm;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icons {
+  bottom: 2;
+}
+.social-icons a {
+  padding: 2px;
+  font-size: 1.5em;
+}
+
+.github {
+  color: black;
+}
+
+.instagram {
+  color: #f0337b;
+}
+
+.linkedin {
+  color: #0e76a8;
 }
