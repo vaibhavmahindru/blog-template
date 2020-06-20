@@ -5,6 +5,11 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="sidebar">
+        <h1>Vaibhav Mahindru</h1>
+        <p>
+          aspiring developer || cs undergrad <br />
+          <br /> otaku || keen learner
+        </p>
         <div className="navbar">
           <a href="#" className="option">
             Home
@@ -16,6 +21,10 @@ class Sidebar extends Component {
             Projects
           </a>
         </div>
+        <h2>
+          Contact me:-
+          <br />
+        </h2>
         <div className="social-icons">
           <a className="github" target="_b" href="#">
             <FaGithub />

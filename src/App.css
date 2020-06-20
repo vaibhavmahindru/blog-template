@@ -8,36 +8,67 @@ body {
 }
 
 .sidebar {
-  background-color: pink;
+  background-color: #333399;
+  color: whitesmoke;
   float: left;
   width: 25%;
   height: 768px;
   text-align: center;
   position: fixed;
   left: 0;
+  border-right: 2px solid black;
+}
+
+.sidebar > h1 {
+  text-align: left;
+  margin: 25px;
+  margin-top: 1em;
+  padding: 10px;
+  font-size: 4rem;
+}
+
+.sidebar > h2 {
+  text-align: center;
+  /*margin: 25px;*/
+  /*margin-top: 8rem;*/
+  /*padding: 10px;*/
+  font-size: 2rem;
+}
+
+.sidebar > p {
+  text-transform: uppercase;
+  color: black;
+  opacity: 0.85;
 }
 
 .navbar,
 .social-icons {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
 }
-
-.navbar a {
-  padding: 5px;
-  margin: 0.5cm;
-  text-decoration: none;
+.navbar {
+  margin-top: 3rem;
 }
-
 .social-icons {
-  bottom: 2;
+  flex-direction: row;
 }
+.navbar a,
 .social-icons a {
-  padding: 2px;
-  font-size: 1.5em;
+  padding: 5px;
+  text-decoration: none;
+  color: antiquewhite;
 }
 
-.github {
+.navbar a:hover,
+.social-icons a:hover {
+  font-size: 2rem;
+}
+.navbar a:hover {
+  background-color: black;
+}
+/*.github {
   color: black;
 }
 
@@ -47,4 +78,4 @@ body {
 
 .linkedin {
   color: #0e76a8;
-}
+}*/
