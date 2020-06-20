@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import About from "./about.js";
 
 class Sidebar extends Component {
   render() {
@@ -11,8 +12,8 @@ class Sidebar extends Component {
           <br /> otaku || keen learner
         </p>
         <div className="navbar">
-          <a href="#" className="option">
-            Home
+          <a href="#blog" className="option">
+            Blog
           </a>
           <a href="#" className="option">
             About

@@ -18,7 +18,36 @@ body {
   left: 0;
   border-right: 2px solid black;
 }
+.content {
+  margin-top: 3rem;
+  float: right;
+  width: 75%;
+}
 
+.article {
+  text-align: left;
+  margin-left: 110px;
+}
+.article > h1 {
+  font-size: 3rem;
+}
+.article > h5 {
+  color: grey;
+  margin-top: -2.2rem;
+  font-size: 20px;
+  margin-left: 8px;
+}
+.article > p,
+.article > a {
+  margin-left: 8px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.line {
+  margin-left: 80px;
+  margin-right: 80px;
+}
 .sidebar > h1 {
   text-align: left;
   margin: 25px;
