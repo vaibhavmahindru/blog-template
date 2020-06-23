@@ -15,7 +15,7 @@ class Sidebar extends Component {
           <a href="#blog" className="option">
             Blog
           </a>
-          <a href="#" className="option">
+          <a href={<About />} className="option">
             About
           </a>
           <a href="#" className="option">

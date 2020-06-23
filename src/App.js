@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar.js";
 import "./App.css";
 import Articles from "./components/articles.js";
 import Article from "./components/article.js";
+import Footer from "./components/footer.js";
 class App extends React.Component {
   state = {
     article: Articles,
@@ -15,6 +16,7 @@ class App extends React.Component {
       <React.Fragment>
         <Sidebar />
         {article}
+        <Footer />
       </React.Fragment>
     );
   }
