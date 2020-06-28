@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import About from "./about.js";
+import { Link } from "react-router-dom";
 
 class Sidebar extends Component {
   render() {
@@ -12,15 +12,9 @@ class Sidebar extends Component {
           <br /> otaku || keen learner
         </p>
         <div className="navbar">
-          <a href="#blog" className="option">
-            Blog
-          </a>
-          <a href={<About />} className="option">
-            About
-          </a>
-          <a href="#" className="option">
-            Projects
-          </a>
+          <Link to="/">Blogs</Link>
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
         </div>
         <h2>
           Contact me:-

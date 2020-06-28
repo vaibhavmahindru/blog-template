@@ -1,23 +1,25 @@
 import React from "react";
 import Sidebar from "./components/Sidebar.js";
 import "./App.css";
-import Articles from "./components/articles.js";
-import Article from "./components/article.js";
 import Footer from "./components/footer.js";
+import About from "./components/about.js";
+import Article from "./components/article";
+import Project from "./components/Project";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 class App extends React.Component {
-  state = {
-    article: Articles,
-  };
   render() {
-    const article = this.state.article.map((item) => (
-      <Article key={item.id} item={item} />
-    ));
     return (
-      <React.Fragment>
-        <Sidebar />
-        {article}
-        <Footer />
-      </React.Fragment>
+      <Router>
+        <React.Fragment>
+          <Sidebar />
+          <Switch>
+            <Route path="/" exact component={Article} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Project} />
+          </Switch>
+          <Footer />
+        </React.Fragment>
+      </Router>
     );
   }
 }
