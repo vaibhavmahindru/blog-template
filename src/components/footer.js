@@ -12,7 +12,11 @@ class Footer extends Component {
         AND{" "}
         <span role="img" aria-label="beer">
           🍺
-        </span>
+        </span>{" "}
+        by{" "}
+        <a href="https://vaibhavmahindru.github.io/intro-page/" target="_b">
+          vaibhav
+        </a>
       </div>
     );
   }

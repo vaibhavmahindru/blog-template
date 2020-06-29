@@ -1,11 +1,27 @@
 import React, { Component } from "react";
-
+import { FaGithubAlt } from "react-icons/fa";
+import Projects from "./projects";
 class Project extends Component {
-  state = {};
+  state = {
+    project: Projects,
+  };
   render() {
     return (
       <div className="project">
-        <h1>Project Page</h1>
+        {this.state.project.map((item) => {
+          return (
+            <div className="project-container">
+              <h1>{item.title}</h1>
+              <p>{item.desc}</p>
+              <a target="_b" href={item.link}>
+                <h3 className="code-link">
+                  source code &nbsp;&nbsp;
+                  <FaGithubAlt id="icon" />
+                </h3>
+              </a>
+            </div>
+          );
+        })}
       </div>
     );
   }
