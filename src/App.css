@@ -5,6 +5,7 @@ body {
   margin: auto;
   max-width: 100%;
   font-family: "Source Sans Pro", sans-serif;
+  /* background-color: rgb(17, 16, 16);*/
 }
 
 .sidebar {
@@ -130,7 +131,7 @@ body {
   float: right;
   width: 75%;
   text-align: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .about > img {
