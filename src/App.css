@@ -61,9 +61,8 @@ body {
 .sidebar > h1 {
   text-align: left;
   margin: 25px;
-  margin-top: 1em;
   padding: 10px;
-  font-size: 4rem;
+  font-size: 4em;
 }
 
 .sidebar > h2 {
@@ -196,4 +195,29 @@ body {
 
 #icon {
   font-size: 2rem;
+}
+
+.blog {
+  float: right;
+  width: 75%;
+}
+.blog-container {
+  margin: 8rem 3px 3px 3px;
+}
+.blog-container > h1 {
+  text-align: left;
+  margin-left: 60px;
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+}
+.blog-container > p {
+  margin-left: 80px;
+  font-size: 2em;
+}
+
+.blog-container > h5 {
+  color: grey;
+  font-size: 1.5em;
+  margin-left: 80px;
+  margin-top: -2em;
 }

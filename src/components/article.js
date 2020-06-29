@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Articles from "./articles";
+
+import { Link } from "react-router-dom";
 class Article extends Component {
   state = {
     article: Articles,
@@ -10,11 +12,11 @@ class Article extends Component {
         <div>
           {this.state.article.map((item) => {
             return (
-              <div className="article">
+              <div className="article" key={item.id}>
                 <h1 className="title">{item.title}</h1>
                 <h5>{item.date}</h5>
                 <p>{item.description}</p>
-                <a href="#">Read More...</a>
+                <Link to={`/${item.id}`}>Read more...</Link>
                 <br />
                 <hr className="line" />
               </div>
