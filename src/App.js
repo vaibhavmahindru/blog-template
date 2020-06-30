@@ -9,6 +9,9 @@ import Blog from "./components/blog";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 class App extends React.Component {
   render() {
+    console.log(
+      "This app was made by Vaibhav Mahindru. Check out his github profile https://github.com/vaibhavmahindru"
+    );
     return (
       <Router>
         <React.Fragment>

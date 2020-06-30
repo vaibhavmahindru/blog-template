@@ -8,9 +8,9 @@ class Blog extends Component {
     return (
       <div className="blog">
         {this.state.article.map((item) => {
-          const id = parseInt(this.props.match.params.id);
-
-          if (item.id === id) {
+          //const id = parseInt(this.props.match.params.id);
+          const id = item.id.toString();
+          if (id === this.props.match.params.id) {
             return (
               <div className="blog-container">
                 <h1>{item.title}</h1>
