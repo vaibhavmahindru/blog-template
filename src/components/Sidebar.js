@@ -31,6 +31,9 @@ class Sidebar extends Component {
             <FaLinkedin />
           </a>
         </div>
+        <h4>
+          Or drop a mail at <span>xyz@gmail.com</span>
+        </h4>
       </div>
     );
   }
